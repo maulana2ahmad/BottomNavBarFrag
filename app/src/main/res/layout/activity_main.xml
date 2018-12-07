@@ -7,20 +7,20 @@
     tools:context="com.mractiveiddev.bottomnavbarfrag.MainActivity">
 
     <FrameLayout
-        android:id="@+id/main_frame"
+        android:id="@+id/frame_bottom"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_nav"
         android:background="@color/colorIconNavbar"/>
 
     <android.support.design.widget.BottomNavigationView
-        android:id="@+id/main_nav"
+        android:id="@+id/bottom_nav"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         app:menu="@menu/nav_items"
-
-        app:itemIconTint="@drawable/items_selected"
-        app:itemTextColor="@drawable/items_selected"></android.support.design.widget.BottomNavigationView>
+        app:itemIconTint="@color/bottom_item_color"
+        app:itemTextColor="@color/bottom_item_color"/>
 
 </RelativeLayout>
